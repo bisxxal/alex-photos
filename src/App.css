@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@font-face {
+  font-family: nav;
+  src: url(../public/BOULEVARD.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+
+.svg ,.svg2{
+mask-image: url(../public/ps3.png);
+mask-size: 0%;
+mask-repeat: no-repeat;
+mask-position: center;
+transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s ;
+}
+
+.h1{
+  font-family: nav;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+
+.fst ,.snd{
+  font-family: "Oswald";
+} 
+.parent:hover .child {
+  top: 0;
+  /* scale: .9; */
+  transition: all ease-out .6s;
+}
+.parent:hover .fbtn {
+  opacity: 0;
+}
